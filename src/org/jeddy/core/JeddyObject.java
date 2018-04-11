@@ -1,6 +1,5 @@
 package org.jeddy.core;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -71,6 +70,9 @@ public class JeddyObject {
 //	}
 	
 	
+	public String toJson() {
+		return new JeddyObjectConverter().toJson(this);
+	}
 	
 
 }

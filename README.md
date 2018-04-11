@@ -53,6 +53,50 @@ Output: {"users":[{"name":"John","age":"31","city":"Buea"},{"name":"Simeon","age
 
 ```
 
+**Example 4** : An Object of Json Object output
+
+```
+
+public class User{
+	private String name = "ET Tanko";
+	private int age = 50;
+	private String[] USstates = {"NY","LA","IL","IA"};
+	private List<String> categories;
+	
+	public User(){
+		categories = new ArrayList<String>();
+		this.categories.add("Books");
+		this.categories.add("Fashion");
+		this.categories.add("Electronics");
+		this.categories.add("Home");
+	}
+	...
+}
+
+```
+
+Converting the User Object to a Json String with all the properties of the User Object
+
+```
+User user = new User();
+JeddyObject obj = Jeddy.getJeddyObject(user);
+obj.toJson();
+
+Output: {"name":"ET Tanko","age":"30","USstates":["NY","LA","IL","IA"],"categories":["Books","Fashion","Electronics","Home"]}
+
+```
+
+Converting the User Object to a Json String without the 'USstates' and 'age' properties of the User Object
+
+```
+User user = new User();
+JeddyObject obj = Jeddy.getJeddyObject(user, new String[] {"USstates","age"});
+obj.toJson();
+
+Output: {"name":"ET Tanko","categories":["Books","Fashion","Electronics","Home"]}
+
+```
+
 
 ## Authors
 

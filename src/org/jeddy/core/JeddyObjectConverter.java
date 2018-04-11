@@ -6,7 +6,7 @@ import java.util.List;
 
 public class JeddyObjectConverter {
 
-	public String toJson(JeddyObject jEddyObj) {
+	protected String toJson(JeddyObject jEddyObj) {
 		StringBuilder sb = new StringBuilder();
 		Collection<List<JeddyNode>> nodeList = jEddyObj.getNodes().values(); 
 		
