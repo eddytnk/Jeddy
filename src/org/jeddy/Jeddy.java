@@ -63,12 +63,11 @@ public class Jeddy {
 	}
 	
 	
-	
-	
 	public static void main(String[] args) {
 		
-		JeddyObject obj = Jeddy.getJeddyObject(new User(),new String[] {"USstates","age"});
-		System.out.println(obj.toJson());
+		//JeddyObject obj = Jeddy.getJeddyObject(new User(),new String[] {"USstates","age"});
+		JeddyObject obj = Jeddy.getJeddyObject(new User(),new String[] {});
+		System.out.println(obj.toXml());
 		
 		
 		/*JeddyObject user1 = new JeddyObject("user1");
@@ -94,7 +93,7 @@ public class Jeddy {
 		user.addNode("users", user1);
 		user.addNode("users", user2);
 		
-		System.out.println(user.toJson());*/
+		System.out.println(user.toXml());*/
 		
 	}
 }

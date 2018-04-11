@@ -73,6 +73,24 @@ public class JeddyObject {
 	public String toJson() {
 		return new JeddyObjectConverter().toJson(this);
 	}
+	/**
+	 * Generate an XML String response 
+	 * with the xmlProlog <?xml version=\"1.0\" encoding=\"UTF-8\"?>
+	 * @return
+	 */
+	public String toXml() {
+		return new JeddyObjectConverter().toXml(this,true);
+	}
+	
+	/**
+	 * Generate an XML String response 
+	 * if  xmlProlog =true add xmlProlog <?xml version=\"1.0\" encoding=\"UTF-8\"?>
+	 * 
+	 * @return
+	 */
+	public String toXml(boolean xmlProlog) {
+		return new JeddyObjectConverter().toXml(this,xmlProlog);
+	}
 	
 
 }
