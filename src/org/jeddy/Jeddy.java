@@ -23,14 +23,14 @@ public class Jeddy {
 		user.addNode("users", user1);
 		user.addNode("users", user2);
 		
-//		JeddyObject test = new JeddyObject("test");
-		user.addNode("names", "john");
-		user.addNode("names", "Edward");
-		user.addNode("names", "Jude");
+		JeddyObject names = new JeddyObject();
+		names.addNode("names", "john");
+		names.addNode("names", "Edward");
+		names.addNode("names", "Jude");
 		
 		JeddyObjectConverter cv = new JeddyObjectConverter();
 		
-		System.out.println(cv.toJson(user));
+		System.out.println(cv.toJson(names));
 		
 	}
 }
