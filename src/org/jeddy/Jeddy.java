@@ -65,35 +65,34 @@ public class Jeddy {
 	
 	public static void main(String[] args) {
 		
-		//JeddyObject obj = Jeddy.getJeddyObject(new User(),new String[] {"USstates","age"});
-		JeddyObject obj = Jeddy.getJeddyObject(new User(),new String[] {});
+		JeddyObject obj = Jeddy.getJeddyObject(new User(),new String[] {"USstates","age"});
+		//JeddyObject obj = Jeddy.getJeddyObject(new User());
 		System.out.println(obj.toXml());
 		
 		
-		/*JeddyObject user1 = new JeddyObject("user1");
-		user1.addNode("name", "John");
-		user1.addNode("age", "31");
-		user1.addNode("city", "Buea");
-		
-		JeddyObject user2 = new JeddyObject("user2");
-		user2.addNode("name", "Simeon");
-		user2.addNode("age", "40");
-		user2.addNode("city", "Limbe");
-		
-		
-		
-		JeddyObject names = new JeddyObject();
-		names.addNode("names", "john");
-		names.addNode("names", "Edward");
-		names.addNode("names", "Jude");
-		
-		user1.addNode("names", names);
-		
-		JeddyObject user = new JeddyObject("users");
-		user.addNode("users", user1);
-		user.addNode("users", user2);
-		
-		System.out.println(user.toXml());*/
+//		JeddyObject user1 = new JeddyObject("user1");
+//		user1.addNode("name", "John");
+//		user1.addNode("age", "31");
+//		user1.addNode("city", "Buea");
+//		//System.out.println(user1.toXml());
+//		
+//		JeddyObject user2 = new JeddyObject("user2");
+//		user2.addNode("name", "Simeon");
+//		user2.addNode("age", "40");
+//		user2.addNode("city", "Limbe");
+//		
+//		JeddyObject names = new JeddyObject();
+//		names.addNode("names", "john");
+//		names.addNode("names", "Edward");
+//		names.addNode("names", "Jude");
+//		
+//		//user1.addNode("names", names);
+//		
+//		JeddyObject user = new JeddyObject("users");
+//		user.addNode("users", user1);
+//		user.addNode("users", user2);
+//		
+//		System.out.println(user.toXml());
 		
 	}
 }
